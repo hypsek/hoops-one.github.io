@@ -1,0 +1,197 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	%circle_text {
+		position: absolute;
+		color: #1a1a1a;
+		font-family: "Myriad Pro";
+		font-size: 17px;
+		font-weight: 400;
+	}
+	.item_text p {
+		height: 102px;
+	}
+	.content_caption p {
+		width: 69%;
+		font-size: 16px;
+	}
+	.header_circle1 {
+		right: 59%;
+	}
+
+	.header_circle2 {
+		right: 62%;
+	}
+
+	.header_circle3 {
+		right: 59%;
+	}
+
+	.header_circle4 {
+		right: 33%;
+	}
+
+	.header_circle5 {
+		right: 28%;
+	}
+
+	.header_circle6 {
+		right: 33%;
+	}
+	// text 
+	.circle_text1 {
+		right: 69%;
+	}
+
+	.circle_text2 {
+		right: 72%;
+	}
+
+	.circle_text3 {
+		right: 69%;
+	}
+
+	.circle_text4 {
+		right: 5%;
+	}
+
+	.circle_text5 {
+		right: 1%;
+	}
+
+	.circle_text6 {
+		right: 5%;
+	}
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.content_text {
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.content_share {
+		width: 100%;
+		margin-bottom: 45px;
+	}
+	.content_aside {
+		display: none;
+	}
+	.btn {
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 110px;
+	}
+	.img-circle {
+		width: 240px;
+		height: 240px;
+		// margin: 0 auto;
+	}
+	%circle_text {
+		position: absolute;
+		color: #1a1a1a;
+		font-family: "Myriad Pro";
+		font-size: 13px;
+		font-weight: 400;
+	}
+	.header_circle1 {
+		right: 55%;
+	}
+
+	.header_circle2 {
+		right: 58%;
+	}
+
+	.header_circle3 {
+		right: 54%;
+	}
+
+	.header_circle4 {
+		right: 33%;
+	}
+
+	.header_circle5 {
+		right: 29%;
+	}
+
+	.header_circle6 {
+		right: 34%;
+	}
+	// text 
+	.circle_text1 {
+		right: 69%;
+	}
+
+	.circle_text2 {
+		right: 72%;
+	}
+
+	.circle_text3 {
+		right: 69%;
+	}
+
+	.circle_text4 {
+		right: 5%;
+	}
+
+	.circle_text5 {
+		right: 1%;
+	}
+
+	.circle_text6 {
+		right: 5%;
+	}
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	.header_image {
+		display: none;
+	}
+	.btn {
+		margin-bottom: 0;
+	}
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	.content_text img {
+		margin-bottom: 30px;
+	}
+	.content_caption p {
+		width: 100%;
+	}
+	.content_text {
+		height: 330px;
+	}
+	.content_title h1 {
+		width: 100%;
+	}
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+
+}

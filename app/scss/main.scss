@@ -1,0 +1,334 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $purple-bg;
+	color: #fff;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.header {
+	background-color: $purple-bg;
+	width: 100%;
+	height: 100%;
+	padding: 60px 0 115px;
+	margin-bottom: 30px;
+}
+
+.btn {
+	height: 112px;
+	max-width: 280px;
+	width: 100%;
+	background-color: $green-bg;
+	margin-bottom: 110px;
+}
+
+.header_image {
+	width: 100%;
+	position: relative;
+	img {
+		margin: 0 auto;
+	}
+}
+
+%header_circle {
+	background-image: url('../img/circle.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 85px;
+	height: 85px;
+}
+
+.header_circle1 {
+	@extend %header_circle;
+	top: 0px;
+	right: 58%;
+}
+
+.header_circle2 {
+	@extend %header_circle;
+	top: 37%;
+	right: 61%;
+}
+
+.header_circle3 {
+	@extend %header_circle;
+	top: 75%;
+	right: 58%;
+}
+
+.header_circle4 {
+	@extend %header_circle;
+	top: 0px;
+	right: 35%;
+}
+
+.header_circle5 {
+	@extend %header_circle;
+	top: 37%;
+	right: 31%;
+}
+
+.header_circle6 {
+	@extend %header_circle;
+	top: 75%;
+	right: 35%;
+}
+
+%circle_text {
+	position: absolute;
+	color: #1a1a1a;
+	font-family: "Myriad Pro";
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.circle_text1 {
+	@extend %circle_text;
+	top: 20px;
+	right: 67%;
+}
+
+.circle_text2 {
+	@extend %circle_text;
+	top: 44%;
+	right: 70%;
+}
+
+.circle_text3 {
+	@extend %circle_text;
+	top: 82%;
+	right: 67%;
+}
+
+.circle_text4 {
+	@extend %circle_text;
+	top: 20px;
+	right: 5%;
+}
+
+.circle_text5 {
+	@extend %circle_text;
+	top: 44%;
+	right: 1%;
+}
+
+.circle_text6 {
+	@extend %circle_text;
+	top: 82%;
+	right: 5%;
+}
+
+.content_text {
+	height: 190px;
+	width: 595px / 730px * 100%;
+	padding: 25px 15px 35px 35px;
+	float: left;
+	background-color: $green-bg;
+	overflow: hidden;
+    margin-bottom: 45px;
+	img {
+		display: inline-block;
+		float: left;
+		position: relative;
+		top: 10px;
+		margin-right: 15px;
+	}
+}
+
+.content_title h1{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	float: left;
+	color: #1a1a1a;
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.content_caption p{
+	margin: 0;
+	padding: 0;
+	width: 75%;
+	display: inline-block;
+	float: left;
+	color: #1a1a1a;
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	font-weight: 400;
+	overflow: auto;
+	height: 120px;
+}
+
+.content_share {
+	height: 190px;
+	width: 135px / 730px * 100%;
+	float: left;
+	background-color: $purple-bg;
+	padding: 15px 0px;
+	text-align: center;
+	
+}
+
+.likes_text {
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.likes_number {
+	border: none;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	background: transparent;
+	color: #FFF;
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.content_aside {
+	width: 100%;
+	height: 100%;
+	background-color: $purple-bg;
+	max-width: 267px;
+	margin: 15px auto;
+}
+
+.content_item {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+%item_img {
+	height: 200px;
+	max-width: 350px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.img-green {
+	@extend %item_img;
+	background-color: $green-bg;
+	&:hover {
+		background-color: $blue-bg;
+	}
+	&:active {
+		background-color: $purple-bg;
+	}
+}
+
+.img-blue {
+	@extend %item_img;
+	background-color: $blue-bg;
+	&:hover {
+		background-color: $green-bg;
+	}
+	&:active {
+		background-color: $purple-bg;
+	}
+}
+
+.item_title h2{
+	margin: 0;
+	padding: 0;
+	color: #1a1a1a;
+	font-family: "Open Sans";
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 20px 0 10px;
+}
+
+.item_text p{
+	margin: 0;
+	padding: 0;	
+	color: #1a1a1a;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	line-height: 1.2;
+	overflow: auto;
+	height: 85px;
+}
+
+.content_button {
+	border: none;
+	padding: 25px 80px;
+	border-radius: 5px;
+	background-color: $purple-bg;
+	color: #1a1a1a;
+	font-family: "Myriad Pro";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 23.78px;
+	text-transform: uppercase;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	     -o-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+}
+
+.footer_copyright {
+	margin-top: 30px;
+	padding: 155px 130px;
+	background-color: #f5f5f5;
+	color: #1a1a1a;
+	font-family: "Open Sans";
+	font-size: 13px;
+	font-weight: 400;
+	text-align: center;
+}
+
+
+@import "media"; // Always at the end
